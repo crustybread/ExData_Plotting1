@@ -12,7 +12,7 @@ hpc <- arrange(hpc, hpc$Date)
 hpc <- subset(hpc, hpc$Date >= "2007/02/01" & hpc$Date <= "2007/02/02")
 str(hpc); head(hpc,20); tail(hpc,20)
 
-#construct plot
+#construct plot and display on screen device
 plot2 <- function() {
   x <- c("Thu", "Fri", "Sat")
   y <- c(0,1475,2900)
